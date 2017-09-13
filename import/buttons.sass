@@ -1,0 +1,126 @@
+.btn
+	display: inline-block
+	text-align: center
+	padding: $btnY $btnX
+	font-family: $font2
+	color: #fff
+	font-size: 1rem
+	border: 1px solid transparent
+	@if $btnBRadius == true
+		+border-radius($btnBRadiuspx)
+	transition: all .15s ease-in-out
+
+.btn:hover
+	@if $btnHover == true
+		cursor: pointer
+		opacity: .8
+
+.btn-fwidth
+	display: block
+	width: 100%
+
+.btn-basic
+	background-color: #00acee
+	@if $btnBorder == true
+		border-color: #009ad6
+	@if $btnShade == true
+		+background(0,171,238,1,0,153,214,1)
+
+.btn-secondary
+	background-color: #888888
+	@if $btnBorder == true
+		border-color: #7a7a7a
+	@if $btnShade == true
+		+background(136,136,136,1,122,122,122,1)
+
+.btn-complete
+	background-color: #49c116
+	@if $btnBorder == true
+		border-color: #41ad13
+	@if $btnShade == true
+		+background(73,193,22,1,65,173,19,1)
+
+.btn-error
+	background-color: #ec0909
+	@if $btnBorder == true
+		border-color: #d40808
+	@if $btnShade == true
+		+background(236,9,9,1,212,8,8,1)
+
+.btn-warning
+	background-color: #ec9c09
+	@if $btnBorder == true
+		border-color: #d48c08
+	@if $btnShade == true
+		+background(236,157,9,1,212,141,8,1)
+
+.btn-info
+	background-color: #b30fe8
+	@if $btnBorder == true
+		border-color: #a10dd0
+	@if $btnShade == true
+		+background(178,15,232,1,163,13,208,1)
+
+.btn-link
+	background: none
+	color: $primaryColor 
+	
+.btn-o-basic
+	background: none
+	color: #00acee
+	border-color: #00acee
+
+.btn-o-basic:hover
+	background-color: #00acee
+	color: #fff
+
+.btn-o-secondary
+	background: none
+	color: #888888
+	border-color: #888888
+
+.btn-o-secondary:hover
+	background-color: #888888
+	color: #fff
+
+.btn-o-complete
+	background: none
+	color: #49c116
+	border-color: #49c116
+
+.btn-o-complete:hover
+	background-color: #49c116
+	color: #fff
+
+.btn-o-error
+	background: none
+	color: #ec0909
+	border-color: #ec0909
+
+.btn-o-error:hover
+	background-color: #ec0909
+	color: #fff
+
+.btn-o-warning
+	background: none
+	color: #ec9c09
+	border-color: #ec9c09
+
+.btn-o-warning:hover
+	background-color: #ec9c09
+	color: #fff
+
+.btn-o-info
+	background: none
+	color: #b30fe8
+	border-color: #b30fe8
+
+.btn-o-info:hover
+	background-color: #b30fe8
+	color: #fff
+
+.btn-o-stealth
+	background: none
+
+.btn-o-stealth:hover
+	background-color: rgba(0,0,0,.1)

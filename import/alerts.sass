@@ -1,0 +1,53 @@
+.alert
+	@if $alertFullWidth == false
+		display: inline-block
+	text-align: left
+	padding: $alertY $alertX
+	font-family: $font1
+	color: #fff
+	font-size: 1.1rem
+	border: 1px solid transparent
+	@if $alertBRadius == true
+		+border-radius($alertBRadiuspx)
+
+.alert:hover
+	cursor: not-allowed
+
+.alert-basic
+	background-color: #cceefb
+	color: #7fd5f6
+	@if $alertBorder == true
+		border-color: #b2e6f9
+
+.alert-secondary
+	background-color: #e7e7e7
+	color: #c3c3c3
+	@if $alertBorder == true
+		border-color: #dbdbdb
+
+.alert-complete
+	background-color: #daf2d0
+	color: #a4e08a
+	@if $alertBorder == true
+		border-color: #c8ecb9
+
+.alert-error
+	background-color: #fbcdcd
+	color: #f58484
+	@if $alertBorder == true
+		border-color: #f9b5b5
+
+.alert-warning
+	background-color: #fbebcd
+	color: #f5cd84
+	@if $alertBorder == true
+		border-color: #f9e1b5
+.alert-info
+	background-color: #efcffa
+	color: #d987f3
+	@if $alertBorder == true
+		border-color: #e8b7f8
+
+.alert-stealth
+	@if $alertBorder == true
+		border-color: #d1d1d1
