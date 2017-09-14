@@ -33,7 +33,7 @@ You need compiling this with any processor wrote above and link the output css i
 
 ## Contributing
 
-All are wellcome.
+Please read [CONTRIBUTING.md](CODE_OF_CONDUCT.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
