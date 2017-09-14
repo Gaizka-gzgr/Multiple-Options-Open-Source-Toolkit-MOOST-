@@ -19,7 +19,7 @@ Follow this link for more details : (http://sass-lang.com/install)
 
 * 1. Compile the SASS.
 * 2. The output will be a normal CSS.
-* 3. Use html tag (<link href="output.css" rel="stylesheet" type="text/css">) in your html file.
+* 3. Use html tag ```(<link href="output.css" rel="stylesheet" type="text/css">)``` in your html file.
 * 4. Start usint it!
 
 ## Deployment
