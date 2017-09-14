@@ -2,37 +2,37 @@
  * Name: 		Multiple Options Open Source Toolkit (MOOST)
  * Version: 	v0.1-alpha
  * Author:		Gaizka González Graña (gaizka.gzgr@gmail.com)
- * License: 	MIT
+ * License: 	MIT (https://github.com/Gaizka-gzgr/Multiple-Options-Open-Source-Toolkit-MOOST-/blob/master/LICENSE)
  * Copyright 2017 - i++
  ************************************/
 
 ////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////// VAR CONFIG  ///////////////////////////////////////////
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400:Raleway')
-$font1		 	: 'Roboto', sans-serif
-$font2			: 'Raleway', sans-serif
-$fontSize		: 16px
-$bg				: #F3F3F3
+$font1          : 'Roboto', sans-serif
+$font2          : 'Raleway', sans-serif
+$fontSize       : 16px
+$bg             : #F3F3F3
 $primaryColor 	: #222
 $secondaryColor : #777
 ///////////////////  ALERTS ////////////////
-$alertX 		: 45px
-$alertY 		: 20px
-$alertBorder 	: true
+$alertX 		    : 45px
+$alertY 		    : 20px
+$alertBorder 	  : true
 $alertBRadius 	: false
 $alertBRadiuspx	: 4px
 $alertFullWidth : true
 /////////////////// BUTTONS ////////////////
-$btnX 			: 45px
-$btnY 			: 15px
-$btnBorder 		: true
-$btnShade		: true
-$btnHover		: true
-$btnBRadius 	: false
-$btnBRadiuspx	: 4px 
+$btnX           : 45px
+$btnY           : 15px
+$btnBorder      : true
+$btnShade       : true
+$btnHover       : true
+$btnBRadius     : false
+$btnBRadiuspx   : 4px
 /////////////////////////////////////////////////////////////////////////////
 
-	
+
 *
 	padding: 0
 	margin: 0
@@ -47,6 +47,25 @@ body
 	background: $bg
 	color: #000
 
+/*====== MOBILE =========*/
+@media (min-width: 576px)
+.container
+	max-width: 540px
+
+/*====== TABLET =========*/
+@media (min-width: 768px)
+.container
+	max-width: 720px
+
+/*====== TABLET LARGER =========*/
+@media (min-width: 992px)
+.container
+	max-width: 960px
+
+/*====== DESKTOP =========*/
+@media (min-width: 1200px)
+.container
+	max-width: 1140px
 
 ////////////////// MIXING ///////////////////////////////////////////////////////////////////////////////////////////////////////
 =border-radius($radius)
@@ -69,7 +88,3 @@ body
 @import import/alerts
 @import import/buttons
 ////////////////////////////////////////////////
-	
-	
-
-	
