@@ -1,4 +1,4 @@
-.btn
+.btn, .btno
 	display: inline-block
 	text-align: center
 	padding: $btnY $btnX
@@ -10,10 +10,21 @@
 		+border-radius($btnBRadiuspx)
 	transition: all .15s ease-in-out
 
+.btn
+	@if $btnBRadius == true
+		+border-radius($btnBRadiuspx)
+
+.btno
+	@if $btnoBRadius == true
+		+border-radius($btnoBRadiuspx)
+
 .btn:hover
 	@if $btnHover == true
 		cursor: pointer
 		opacity: .8
+	
+.btno:hover
+	cursor: pointer
 
 .btn-fwidth
 	display: block
@@ -32,6 +43,13 @@
 		border-color: #7a7a7a
 	@if $btnShade == true
 		+background(136,136,136,1,122,122,122,1)
+
+.btn-black
+	background-color: #000
+	@if $btnBorder == true
+		border-color: #191919
+	@if $btnShade == true
+		+background(0,0,0,1,25,25,25,1)
 
 .btn-complete
 	background-color: #49c116
@@ -65,62 +83,71 @@
 	background: none
 	color: $primaryColor 
 	
-.btn-o-basic
+.btno-basic
 	background: none
 	color: #00acee
 	border-color: #00acee
 
-.btn-o-basic:hover
+.btno-basic:hover
 	background-color: #00acee
 	color: #fff
 
-.btn-o-secondary
+.btno-secondary
 	background: none
 	color: #888888
 	border-color: #888888
 
-.btn-o-secondary:hover
+.btno-black
+	background: none
+	color: #000
+	border-color: #000
+
+.btno-black:hover
+	background-color: #000
+	color: #fff
+
+.btno-secondary:hover
 	background-color: #888888
 	color: #fff
 
-.btn-o-complete
+.btno-complete
 	background: none
 	color: #49c116
 	border-color: #49c116
 
-.btn-o-complete:hover
+.btno-complete:hover
 	background-color: #49c116
 	color: #fff
 
-.btn-o-error
+.btno-error
 	background: none
 	color: #ec0909
 	border-color: #ec0909
 
-.btn-o-error:hover
+.btno-error:hover
 	background-color: #ec0909
 	color: #fff
 
-.btn-o-warning
+.btno-warning
 	background: none
 	color: #ec9c09
 	border-color: #ec9c09
 
-.btn-o-warning:hover
+.btno-warning:hover
 	background-color: #ec9c09
 	color: #fff
 
-.btn-o-info
+.btno-info
 	background: none
 	color: #b30fe8
 	border-color: #b30fe8
 
-.btn-o-info:hover
+.btno-info:hover
 	background-color: #b30fe8
 	color: #fff
 
-.btn-o-stealth
+.btno-stealth
 	background: none
 
-.btn-o-stealth:hover
+.btno-stealth:hover
 	background-color: rgba(0,0,0,.1)
