@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*********************************************************
- * Name:			Multiple Options Open Source Toolkit (MOOST)
- * Version:		v0.2-alpha
+ * Name:		Multiple Options Open Source Toolkit (MOOST)
+ * Version:		v0.3-alpha
  * Author:		Gaizka González Graña (gaizka.gzgr@gmail.com)
  * License:		MIT (https://github.com/Gaizka-gzgr/Multiple-Options-Open-Source-Toolkit-MOOST-/blob/master/LICENSE)
  * Copyright 2017 - i++
@@ -251,5 +251,57 @@ body {
 
 .btno-stealth:hover {
   background-color: rgba(0, 0, 0, 0.1); }
+
+.fi-ink {
+  -webkit-filter: contrast(123%) brightness(95%) saturate(122%) sepia(32%) grayscale(100%);
+  filter: contrast(123%) brightness(95%) saturate(122%) sepia(32%) grayscale(100%); }
+
+.fi-brightshadow {
+  -webkit-filter: contrast(183%) brightness(118%) saturate(108%) sepia(100%) grayscale(100%);
+  filter: contrast(183%) brightness(118%) saturate(108%) sepia(100%) grayscale(100%); }
+
+.fi-dream {
+  -webkit-filter: brightness(177%) saturate(121%) sepia(25%) blur(1px);
+  filter: brightness(177%) saturate(121%) sepia(25%) blur(1px); }
+
+.fi-sunny {
+  -webkit-filter: contrast(134%) brightness(124%) saturate(125%);
+  filter: contrast(134%) brightness(124%) saturate(125%); }
+
+.fi-magic {
+  -webkit-filter: contrast(98%) brightness(118%) saturate(126%) hue-rotate(240deg);
+  filter: contrast(98%) brightness(118%) saturate(126%) hue-rotate(240deg); }
+
+.fi-magiclight {
+  -webkit-filter: contrast(119%) brightness(133%) hue-rotate(111deg);
+  filter: contrast(119%) brightness(133%) hue-rotate(111deg); }
+
+.fi-invert {
+  -webkit-filter: invert(1);
+  filter: invert(1); }
+
+.fi-timewalk {
+  -webkit-filter: contrast(118%) brightness(103%) saturate(91%) sepia(100%);
+  filter: contrast(118%) brightness(103%) saturate(91%) sepia(100%); }
+
+.fi-oldtimes {
+  -webkit-filter: contrast(173%) brightness(111%) saturate(91%) sepia(100%);
+  filter: contrast(173%) brightness(111%) saturate(91%) sepia(100%); }
+
+.fi-memory {
+  -webkit-filter: contrast(132%) brightness(111%) saturate(91%) sepia(100%) blur(1px);
+  filter: contrast(132%) brightness(111%) saturate(91%) sepia(100%) blur(1px); }
+
+.fi-crayon {
+  -webkit-filter: contrast(127%) brightness(108%) saturate(197%) grayscale(9%) invert(10%) hue-rotate(21deg);
+  filter: contrast(127%) brightness(108%) saturate(197%) grayscale(9%) invert(10%) hue-rotate(21deg); }
+
+.fi-dusk {
+  -webkit-filter: contrast(128%) brightness(75%) grayscale(50%);
+  filter: contrast(128%) brightness(75%) grayscale(50%); }
+
+.fi-night {
+  -webkit-filter: contrast(200%) brightness(96%) saturate(80%) grayscale(50%);
+  filter: contrast(200%) brightness(96%) saturate(80%) grayscale(50%); }
 
 /*# sourceMappingURL=main.css.map */
