@@ -1,6 +1,6 @@
 /*********************************************************
  * Name:		Multiple Options Open Source Toolkit (MOOST)
- * Version:		v0.3-alpha
+ * Version:		v0.4-alpha
  * Author:		Gaizka González Graña (gaizka.gzgr@gmail.com)
  * License:		MIT (https://github.com/Gaizka-gzgr/Multiple-Options-Open-Source-Toolkit-MOOST-/blob/master/LICENSE)
  * Copyright 2017 - i++
@@ -12,7 +12,7 @@
 $font1          : 'Roboto', sans-serif
 $font2          : 'Raleway', sans-serif
 $fontSize       : 16px
-$bg             : #F3F3F3
+$bg             : #fff
 $primaryColor 	: #222
 $secondaryColor : #777
 ///////////////////  ALERTS ////////////////
@@ -32,22 +32,22 @@ $btnBRadius     : false
 $btnBRadiuspx   : 4px
 $btnoBRadius 	: false
 $btnoBRadiuspx 	: 4px
+/////////////////// PANELS ////////////////
+$panelPadding	: 10px
+$panelBorder	: true
+$panelgBorder	: true
+$panelgBorderpx	: 2px
+$panelBRadius	: true
+$panelgBRadius	: false
+$panelBRadiuspx	: 5px
+$panelgBRadiuspx: 5px
+$panelCContent	: #6f6f6f
+$panelGCContent	: #fff
+$panelBackColor	: #f7f7f7
+$panelHeadSize	: 1.2rem
+$panelgOpacity 	: .8
 /////////////////////////////////////////////////////////////////////////////
 
-
-*
-	padding: 0
-	margin: 0
-
-a
-	text-decoration: none
-
-body
-	font-family: $font1
-	font-size: $fontSize
-	font-weight: 400
-	background: $bg
-	color: #000
 
 /*====== MOBILE =========*/
 @media (min-width: 576px)
@@ -88,7 +88,9 @@ body
 
 
 ////////////////// IMPORTS //////////////////////
+@import import/basic
 @import import/alerts
 @import import/buttons
 @import import/filter
+@import import/panel
 ////////////////////////////////////////////////

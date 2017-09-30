@@ -1,26 +1,12 @@
 @charset "UTF-8";
 /*********************************************************
  * Name:		Multiple Options Open Source Toolkit (MOOST)
- * Version:		v0.3-alpha
+ * Version:		v0.4-alpha
  * Author:		Gaizka González Graña (gaizka.gzgr@gmail.com)
  * License:		MIT (https://github.com/Gaizka-gzgr/Multiple-Options-Open-Source-Toolkit-MOOST-/blob/master/LICENSE)
  * Copyright 2017 - i++
  *********************************** */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,400:Raleway");
-* {
-  padding: 0;
-  margin: 0; }
-
-a {
-  text-decoration: none; }
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  background: #F3F3F3;
-  color: #000; }
-
 /*====== MOBILE ========= */
 .container {
   max-width: 540px; }
@@ -36,6 +22,24 @@ body {
 /*====== DESKTOP ========= */
 .container {
   max-width: 1140px; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: #fff;
+  color: #000; }
 
 .alert {
   text-align: left;
@@ -303,5 +307,107 @@ body {
 .fi-night {
   -webkit-filter: contrast(200%) brightness(96%) saturate(80%) grayscale(50%);
   filter: contrast(200%) brightness(96%) saturate(80%) grayscale(50%); }
+
+.panel, .panelg {
+  display: block;
+  text-align: left;
+  font-size: 1rem;
+  overflow: hidden; }
+
+.panel {
+  border: 1px solid transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+
+.panelg {
+  border: 2px solid transparent; }
+
+.panel-header {
+  font-size: 1.2rem;
+  color: #fff; }
+
+.panel-content {
+  color: #6f6f6f;
+  background: #f7f7f7; }
+
+.panelg-content {
+  color: #fff;
+  background: none; }
+
+.panel-content, .panelg-content, .panel-header {
+  padding: 10px; }
+
+/*++++++++++++++++++++++++++++++/ */
+.panel-basic {
+  border-color: #009ad6; }
+
+.panel-basic .panel-header {
+  background-color: #00acee; }
+
+.panel-secondary {
+  border-color: #7a7a7a; }
+
+.panel-secondary .panel-header {
+  background-color: #888888; }
+
+.panel-black {
+  border-color: #191919; }
+
+.panel-black .panel-header {
+  background-color: #000000; }
+
+.panel-complete {
+  border-color: #41ad13; }
+
+.panel-complete .panel-header {
+  background-color: #49c116; }
+
+.panel-error {
+  border-color: #d40808; }
+
+.panel-error .panel-header {
+  background-color: #ec0909; }
+
+.panel-warning {
+  border-color: #d48c08; }
+
+.panel-warning .panel-header {
+  background-color: #ec9c09; }
+
+.panel-info {
+  border-color: #a10dd0; }
+
+.panel-info .panel-header {
+  background-color: #b30fe8; }
+
+.panelg-basic {
+  border-color: #00acee;
+  background: rgba(0, 172, 238, 0.8); }
+
+.panelg-secondary {
+  border-color: #888888;
+  background-color: rgba(136, 136, 136, 0.8); }
+
+.panelg-black {
+  border-color: #000;
+  background: rgba(0, 0, 0, 0.8); }
+
+.panelg-complete {
+  border-color: #49c116;
+  background: rgba(73, 193, 22, 0.8); }
+
+.panelg-error {
+  border-color: #ec0909;
+  background: rgba(236, 9, 9, 0.8); }
+
+.panelg-warning {
+  border-color: #ec9c09;
+  background: rgba(236, 156, 9, 0.8); }
+
+.panelg-info {
+  border-color: #b30fe8;
+  background: rgba(179, 15, 232, 0.8); }
 
 /*# sourceMappingURL=main.css.map */

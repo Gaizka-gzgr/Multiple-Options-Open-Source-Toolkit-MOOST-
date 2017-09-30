@@ -1,0 +1,121 @@
+.panel, .panelg
+	display: block
+	text-align: left
+	font-size: 1rem
+	overflow: hidden
+
+.panel
+	@if $panelBorder == true
+		border: 1px solid transparent
+	@if $panelBRadius == true
+		+border-radius($panelBRadiuspx)
+
+.panelg
+	@if $panelgBorder == true
+		border: $panelgBorderpx solid transparent
+	@if $panelgBRadius == true
+		+border-radius($panelgBRadiuspx)
+
+.panel-header
+	font-size: $panelHeadSize
+	color: #fff
+
+.panel-content
+	color: $panelCContent
+	background: $panelBackColor
+
+.panelg-content
+	color: $panelGCContent
+	background: none
+
+.panel-content, .panelg-content, .panel-header
+	padding: $panelPadding
+
+/*++++++++++++++++++++++++++++++/
+
+.panel-basic
+	@if $panelBorder == true
+		border-color: #009ad6
+
+.panel-basic .panel-header
+	background-color: #00acee
+
+.panel-secondary
+	@if $panelBorder == true
+		border-color: #7a7a7a
+
+.panel-secondary .panel-header
+	background-color: #888888
+
+.panel-black
+	@if $panelBorder == true
+		border-color: #191919
+
+.panel-black .panel-header
+	background-color: #000000
+
+.panel-complete
+	@if $panelBorder == true
+		border-color: #41ad13
+
+.panel-complete .panel-header
+	background-color: #49c116
+
+.panel-error
+	@if $panelBorder == true
+		border-color: #d40808
+
+.panel-error .panel-header
+	background-color: #ec0909
+
+.panel-warning
+	@if $panelBorder == true
+		border-color: #d48c08
+
+.panel-warning .panel-header
+	background-color: #ec9c09
+
+.panel-info
+	@if $panelBorder == true
+		border-color: #a10dd0
+
+.panel-info .panel-header
+	background-color: #b30fe8
+
+//
+
+.panelg-basic
+	@if $panelgBorder == true
+		border-color: #00acee
+	background: rgba(0,172,238,$panelgOpacity)
+
+.panelg-secondary
+	@if $panelgBorder == true
+		border-color: #888888
+	background-color: rgba(136,136,136,$panelgOpacity)
+
+.panelg-black
+	@if $panelgBorder == true
+		border-color: #000
+	background: rgba(0,0,0,$panelgOpacity)
+
+.panelg-complete
+	@if $panelgBorder == true
+		border-color: #49c116
+	background: rgba(73,193,22,$panelgOpacity)
+
+.panelg-error
+	@if $panelgBorder == true
+		border-color: #ec0909
+	background: rgba(236,9,9,$panelgOpacity)
+
+.panelg-warning
+	@if $panelgBorder == true
+		border-color: #ec9c09
+	background: rgba(236,156,9,$panelgOpacity)
+
+.panelg-info
+	@if $panelgBorder == true
+		border-color: #b30fe8
+	background: rgba(179,15,232,$panelgOpacity)
+	
