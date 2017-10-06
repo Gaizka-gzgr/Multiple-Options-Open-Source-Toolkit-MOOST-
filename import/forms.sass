@@ -1,0 +1,79 @@
+.form-wrapper
+	width: 80%
+	margin: 0 auto
+	overflow: hidden
+
+.form-wrapper form
+	padding: $formPadding
+
+input[type="checkbox"]
+	display: none
+
+input[type="checkbox"] + label span 
+	display: inline-block
+	width: 19px
+	height: 19px
+	margin: -1px 4px 0 0
+	vertical-align: middle
+	cursor: pointer
+	border: 1px solid #d2d2d2
+	+border-radius(4px)
+
+
+input[type="checkbox"]:checked + label span
+	background-color: #b9b9b9
+	
+input[type=text], input[type=password], input[type=email], select
+	display: block
+	box-sizing: border-box
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	width: 100%
+	padding: $finputPadding
+	padding-left: 50px
+	margin-bottom: 5px
+	@if $finputBorder == true
+		border: 1px solid #d2d2d2
+	@else 
+		border: none
+	@if $finputBRadius == true
+		+border-radius($inputBRadiuspx)
+	color: $finputColor
+	font-family: $font2
+	font-size: $fontSize
+
+.input-wrapper
+	position: relative
+	
+.attach-icon
+	position: absolute
+	top: 10px
+	left: 10px
+
+.lost-password
+	display: block
+	text-align: center
+	font-family: $font2
+	color: #b9b9b9
+
+.nw-checkbox
+	display: block
+	color: #b9b9b9
+	font-family: $font2
+	font-size: 0.8rem
+
+.lost-password:hover
+	text-decoration: underline
+
+.bradius
+	+border-radius($formBRadiuspx)
+
+.bradius-bottom
+	+border-bottom-right-radius($formBRadiuspx)
+	+border-bottom-left-radius($formBRadiuspx)
+
+.border-trl
+	border-right: 1px solid $formBorderColor
+	border-left: 1px solid $formBorderColor
+	border-bottom: 1px solid $formBorderColor
+

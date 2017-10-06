@@ -1,6 +1,6 @@
 /*********************************************************
  * Name:		Multiple Options Open Source Toolkit (MOOST)
- * Version:		v0.4-alpha
+ * Version:		v0.5-alpha
  * Author:		Gaizka González Graña (gaizka.gzgr@gmail.com)
  * License:		MIT (https://github.com/Gaizka-gzgr/Multiple-Options-Open-Source-Toolkit-MOOST-/blob/master/LICENSE)
  * Copyright 2017 - i++
@@ -15,20 +15,28 @@ $fontSize       : 16px
 $bg             : #fff
 $primaryColor 	: #222
 $secondaryColor : #777
+$basicColor		: #00acee
+$secondaryColor	: #888888
+$blackColor		: #000000
+$completeColor	: #49c116
+$errorColor		: #d40808
+$warningColor	: #d48c08
+$infoColor		: #a10dd0
+
 ///////////////////  ALERTS ////////////////
-$alertX			: 45px
-$alertY			: 20px
+$alertX			: 2.1rem
+$alertY			: 1rem
 $alertBorder 	: true
 $alertBRadius 	: false
 $alertBRadiuspx	: 4px
 $alertFullWidth : true
 /////////////////// BUTTONS ////////////////
-$btnX           : 45px
-$btnY           : 15px
+$btnX           : 2rem
+$btnY           : 1rem
 $btnBorder      : true
 $btnShade       : true
 $btnHover       : true
-$btnBRadius     : false
+$btnBRadius     : true
 $btnBRadiuspx   : 4px
 $btnoBRadius 	: false
 $btnoBRadiuspx 	: 4px
@@ -46,6 +54,21 @@ $panelGCContent	: #fff
 $panelBackColor	: #f7f7f7
 $panelHeadSize	: 1.2rem
 $panelgOpacity 	: .8
+/////////////////// FORM ////////////////
+$formPadding	: 0.6rem
+$formBorderColor: #d2d2d2
+$formBRadiuspx	: 5px
+$finputPadding	: 1rem
+$finputBorder	: true
+$finputBRadius	: true
+$inputBRadiuspx	: 5px
+$finputColor	: #777
+/////////////////// TITLES ////////////////
+$titlePadding	: 1rem
+$titleColor		: #fff
+$titlelBorderpx	: 2px
+/////////////////// EFFECTS ////////////////
+$glowDensity	: 10px
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -70,6 +93,18 @@ $panelgOpacity 	: .8
 	max-width: 1140px
 
 ////////////////// MIXING ///////////////////////////////////////////////////////////////////////////////////////////////////////
+=border-bottom-right-radius($radius)
+	-webkit-border-bottom-right-radius: $radius
+	-moz-border-bottom-right-radius:    $radius
+	-ms-border-bottom-right-radius:     $radius
+	border-bottom-right-radius:         $radius
+
+=border-bottom-left-radius($radius)
+	-webkit-border-bottom-left-radius: $radius
+	-moz-border-bottom-left-radius:    $radius
+	-ms-border-bottom-left-radius:     $radius
+	border-bottom-left-radius:         $radius
+
 =border-radius($radius)
 	-webkit-border-radius: $radius
 	-moz-border-radius:    $radius
@@ -91,6 +126,11 @@ $panelgOpacity 	: .8
 @import import/basic
 @import import/alerts
 @import import/buttons
-@import import/filter
 @import import/panel
+@import import/forms
+@import import/titles
+@import import/filter
+@import import/icons
+@import import/effects
+
 ////////////////////////////////////////////////
